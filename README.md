@@ -1,16 +1,41 @@
-# React + Vite
+# JSX Viewer — IMAK2004
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small Vite + React app that auto-discovers every `.jsx` file in `src/` and serves them as standalone, navigable pages. Built to browse the IMAK2004 (analytical chemistry) topic overviews:
 
-Currently, two official plugins are available:
+1. Statistikk og feil
+2. Kromatografi
+3. Syre/base og pH
+4. Gravimetri
+5. Elektrokjemi
+6. Spektroskopiske metoder
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The index page lists every detected file; each topic loads lazily when you click it.
 
-## React Compiler
+## Requirements
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [Node.js](https://nodejs.org/) 20.19+ or 22.12+ (Vite 8 requirement)
+- npm (ships with Node)
 
-## Expanding the ESLint configuration
+## Running it
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# 1. install dependencies
+npm install
+
+# 2. start the dev server (HMR enabled)
+npm run dev
+```
+
+The dev server prints a local URL (usually <http://localhost:5173>). Open it in a browser.
+
+### Other scripts
+
+```bash
+npm run build     # production build → dist/
+npm run preview   # serve the built bundle locally
+npm run lint      # run ESLint
+```
+
+## Adding a new topic
+
+Drop any `.jsx` file with a `default` export into `src/`. It will show up on the index automatically on the next reload — no routing config needed.
