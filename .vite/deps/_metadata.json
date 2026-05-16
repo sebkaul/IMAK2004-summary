@@ -1,0 +1,32 @@
+{
+  "hash": "631ea7f1",
+  "configHash": "cd133b77",
+  "lockfileHash": "21b8f020",
+  "browserHash": "13c36e13",
+  "optimized": {
+    "react-dom/client": {
+      "src": "../../../../../../../../../../code-envs/imak2004/JSX-Overview/node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "a1e38c8d",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../../../../../../../../../code-envs/imak2004/JSX-Overview/node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "0e3e67a4",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../../../../../../../../../code-envs/imak2004/JSX-Overview/node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "6ed89e24",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "react-C0sMHFfq": {
+      "file": "react-C0sMHFfq.js",
+      "isDynamicEntry": false
+    }
+  }
+}
