@@ -61,6 +61,10 @@ function App() {
     return () => window.removeEventListener('hashchange', onHash)
   }, [])
 
+  useEffect(() => {
+    document.title = current ? prettyName(current) : 'IMAK2004-Oppsummering'
+  }, [current])
+
   return current ? <Viewer path={current} /> : <Index />
 }
 
